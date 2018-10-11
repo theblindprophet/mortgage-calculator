@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+header {
+  width: 100%;
+  color: $light;
+  text-align: center;
+  border-bottom: 1px solid $primary;
+
+  > h1 {
+    margin: 2rem 0;
+  }
+}

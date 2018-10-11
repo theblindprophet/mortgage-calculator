@@ -5,15 +5,22 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "jest"
+    "test": "jest",
+    "sass": "gulp watch"
   },
   "author": "jamie.gross@graspmobiledevelopent.com",
   "license": "ISC",
   "devDependencies": {
     "electron": "^3.0.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-sass": "^4.0.1",
     "jest": "^23.6.0"
   },
   "jest": {
     "verbose": true
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.5"
   }
 }

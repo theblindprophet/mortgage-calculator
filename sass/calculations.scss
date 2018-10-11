@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+#calculations {
+  padding: 1rem 2rem;
+
+  .empty {
+    font-family: $lato;
+    color: $light;
+    text-align: center
+  }
+}

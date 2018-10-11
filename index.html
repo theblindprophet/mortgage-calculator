@@ -3,11 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/actions.css">
+    <link rel="stylesheet" href="./css/calculations.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    
+    <header>
+      <h1>Mortgage Calculator</h1>
+    </header>
+    <div id="actions">
+      <div class="field-container">
+        <label for="loan-amount">Loan Amount</label>
+        <input type="number" id="loan-amount" name="loan-amount" placeholder="0">
+      </div>
+      <div class="field-container">
+        <label for="annual-interest-rate">Annual Interest Rate</label>
+        <input type="number" id="annual-interest-rate" name="annual-interest-rate" placeholder="0">
+      </div>
+      <div class="field-container">
+        <label for="loan-length">Loan Length (Years)</label>
+        <input type="number" id="loan-length" name="loan-length" placeholder="0">
+      </div>
+      <div class="field-container">
+        <label for="extra-payment">Extra Payment (Per Month)</label>
+        <input type="number" id="extra-payment" name="extra-payment" placeholder="0">
+      </div>
+      <div class="field-container">
+        <label for="start-date">Start Date</label>
+        <input type="date" id="start-date" name="start-date" placeholder="0">
+      </div>
+      <div class="field-container">
+        <button id="Calculate">Calculate</button>
+      </div>
+    </div>
+    <div id="calculations">
+      <p class="empty">Enter values above and press 'Calculate'.</p>
+    </div>
+
   </body>
 </html>

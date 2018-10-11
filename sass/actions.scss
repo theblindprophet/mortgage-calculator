@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+#actions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+
+  .field-container {
+    margin: 0 2rem 1rem 0;
+    font-family: $lato;
+
+    > label {
+      display: block;
+      height: 1.25rem;
+      margin-bottom: 0.25rem;
+      color: $primary;
+    }
+    > input {
+      height: 2.5rem;
+      width: 10rem;
+      padding-left: 0.5rem;
+      background: transparent;
+      color: $light;
+      font-size: 0.75rem;
+      border: 1px solid $primary;
+      border-radius: 2px;
+      outline: none;
+
+      &::placeholder {
+        color: rgba($light, 0.4);
+      }
+      &::-webkit-datetime-edit {
+        color: $light;
+        font-family: $lato;
+        font-size: 0.75rem;
+      }
+    }
+    button {
+      height: 2.5rem;
+      width: 10rem;
+      margin-top: 1.5rem;
+      padding-left: 0.5rem;
+      background: $secondary;
+      color: $light;
+      font-size: 0.75rem;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      transition: 200ms ease-in;
+      cursor: pointer;
+
+      &:hover {
+        background: $tertiary;
+      }
+    }
+  }
+}
