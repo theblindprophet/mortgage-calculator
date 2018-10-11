@@ -5,6 +5,15 @@
   flex-wrap: wrap;
   padding: 1rem 2rem;
 
+  #invalid-message {
+    width: 100%;
+    font-family: $lato;
+    color: $warn;
+
+    &.active {
+      margin-bottom: 1rem;
+    }
+  }
   .field-container {
     margin: 0 2rem 1rem 0;
     font-family: $lato;
@@ -25,7 +34,11 @@
       border: 1px solid $primary;
       border-radius: 2px;
       outline: none;
+      transition: 200ms ease-in;
 
+      &.invalid {
+        border: 1px solid $warn;
+      }
       &::placeholder {
         color: rgba($light, 0.4);
       }
@@ -34,10 +47,13 @@
         font-family: $lato;
         font-size: 0.75rem;
       }
+      &:hover {
+        border: 1px solid $tertiary;
+      }
     }
     button {
       height: 2.5rem;
-      width: 10rem;
+      width: calc(10.5rem + 2px);
       margin-top: 1.5rem;
       padding-left: 0.5rem;
       background: $secondary;
