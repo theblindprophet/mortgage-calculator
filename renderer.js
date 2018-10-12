@@ -1,7 +1,11 @@
-const {  } = require('./services/calculations');
+const { calculateTotals } = require('./services/calculations');
 const { validate } = require('./services/validation');
 
-// Register event listeners
-document.querySelector('#calculate').addEventListener('click', validate);
+const execute = () => {
+  if (validate()) {
+    calculateTotals();
+  }
+};
 
-keyboardListener();
+// Register event listeners
+document.querySelector('#calculate').addEventListener('click', execute);
