@@ -18,6 +18,13 @@
 
     > span {
       margin: 0 1.5rem 1.5rem 0;
+      padding: 1rem;
+      border: 1px solid $light;
+      border-radius: 2px;
+
+      > b {
+        color: $primary;
+      }
     }
   }
 }

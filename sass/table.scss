@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+#table {
+  padding: 1rem 2rem;
+
+  > .table {
+    min-width: 600px;
+    font-family: $lato;
+
+    > div {
+      display: flex;
+      width: 100%;
+      transition: 200ms ease-in;
+      
+      > div {
+        padding: 0.5rem;
+        border-bottom: 1px solid $light;
+
+        &:nth-child(1) {
+          width: 8%;
+        }
+        &:nth-child(2) {
+          width: 12%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
+        &:nth-child(4) {
+          width: 20%;
+        }
+        &:nth-child(5) {
+          width: 20%;
+        }
+        &:nth-child(6) {
+          width: 20%;
+        }
+      }
+      &:first-child {
+        > div {
+          font-weight: 700;
+          color: $secondary;
+        }
+      }
+      &:not(:first-child) {
+        &:hover {
+          background: $secondary;
+        }
+        > div {
+          color: $light;
+        }
+      }
+    }
+  }
+}
