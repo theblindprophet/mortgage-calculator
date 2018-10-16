@@ -8,4 +8,16 @@
     color: $light;
     text-align: center
   }
+  #summaries {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $lato;
+    color: $light;
+    font-size: 1.25rem;
+
+    > span {
+      margin: 0 1.5rem 1.5rem 0;
+    }
+  }
 }
